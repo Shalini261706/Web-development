@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reservations</title>
+    </head>
+    <body>
+        <h1 style="color: #380613; font-family: 'Courier New', sans-serif; font-size: 60px; text-align: center;">Reservations</h1>
+    </body>
+    <style>
+        body {
+            background: linear-gradient(to right, #aa7bcb, #dfea47);
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+	width: 50%;
+	margin: 40px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+select, input[type="date"], input[type="time"] {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #f58888;
+}
+
+button[type="submit"] {
+	width: 100%;
+	height: 40px;
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+</style>
+	<form>
+		<label for="location">Location:</label>
+		<select id="location" name="location">
+			<option value="">Please select a location</option>
+			<!-- Add more options here -->
+		</select>
+		<br><br>
+		<label for="number-of-people">Number of People:</label>
+		<select id="number-of-people" name="number-of-people">
+			<option value="">Number of People</option>
+			<!-- Add more options here -->
+		</select>
+		<br><br>
+		<label for="date">Date:</label>
+		<input type="date" id="date" name="date">
+		<br><br>
+		<label for="time">Time:</label>
+		<input type="time" id="time" name="time">
+		<br><br>
+		<button type="submit">FIND A TABLE</button>
+    </form>
+</html>
