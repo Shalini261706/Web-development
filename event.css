@@ -1,0 +1,22 @@
+#events {
+    display: grid;
+    width: 100px;
+    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.event-booking {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 9px 9px rgba(0,0,0,0.1);
+}
+
+.thumbnail-content {
+    padding: 0px 0px 20px 0px;
+}
+
+.thumbnail-content img {
+    width: 100px;
+    border-radius: 8px 8px 8px 8px;
+}

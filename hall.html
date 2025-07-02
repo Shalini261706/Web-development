@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Hall Catering</title>
+  <link rel="stylesheet" href="hall.css"/>
+</head>
+<body>
+  <header>
+    <h1>Mini Hall Catering</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header><br>
+
+  <section style="width: 850; height: 300;">
+    <img src="hall.jpg">
+</section>
+<section id="about">
+    <h2 style="font-family: cursive; color: brown; font-size: 50px;">About Our Hall</h2>
+    <p>Welcome to Our Catering services.We offer delicious food for any occasion</p>
+    <p>Perfect for small events, birthday parties, meetings, and more. Affordable rates and great service.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="hall.jpg" alt="Hall View 1"></img>
+      <img src="hall 3.jpg" alt="Hall View 2" />
+      <img src="hall 2.jpg" alt="Hall View 3" />
+    </div><br>
+    <center>
+        <a href="hall booking.html"><button style="background-color: black; text-align: center; color: #fff;">Know More</button></a>
+    </center>
+  </section>
+
+  <section id="booking">
+    <h2>Book Now</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="date" required />
+      <input type="time" required />
+      <input type="text" placeholder="Number of People" required/>
+      <input type="text" placeholder=" How would you prefer to be contacted"required />
+                    <select id="contactMethod" name="contactMethod"></select>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="text">Text</option>
+                </select>
+      <input typr="text" placeholder="Is there any additional information you would like to add?"/>
+      <button type="submit">Book</button>
+    </form>
+    <p id="confirmation"></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@minihall.com</p>
+    <p>Phone: +91 98765 43210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mini Hall Catering</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

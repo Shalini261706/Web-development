@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(222, 234, 135, 0.743),rgba(234, 236, 237, 0.743));
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.ext-label {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.ext-input {
+    width: 20%;
+    display: inline-block;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Your Contact Information</h1>
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name*</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name*</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number*</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                <label for="ext" class="ext-label">Ext.</label>
+                <input type="text" id="ext" name="ext" class="ext-input">
+            </div>
+            <div class="form-group">
+                <label for="contactMethod">How would you prefer to be contacted?</label>
+                <select id="contactMethod" name="contactMethod">
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="text">Text</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+            </div>
+        </form>
+    </div>
+</body>
+
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="date"], input[type="time"], input[type="number"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+form {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(246, 248, 249);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.captcha-container {
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+</style>
+    <div class="container">
+        <h2>Your Event Details</h2>
+        <form>
+            <label for="eventNature">Nature of this Event (e.g., Birthday Party or Business Dinner)</label>
+            <input type="text" id="eventNature" name="eventNature"><br><br>
+            <label for="eventDate">Event Date</label>
+            <input type="date" id="eventDate" name="eventDate"><br><br>
+            <label for="startTime">Start Time</label>
+            <input type="time" id="startTime" name="startTime" value="18:00"><br><br>
+            <label for="endTime">End Time</label>
+            <input type="time" id="endTime" name="endTime" value="21:00"><br><br>
+            <label for="numberOfPeople">Number of People</label>
+            <input type="number" id="numberOfPeople" name="numberOfPeople"><br><br>
+            <label for="additionalInfo">Is there any additional information you would like to add?</label><br>
+            <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea>
+            <h2>How did you hear about us?</h2>
+            <input type="text" placeholder="Select an option">
+            <div class="captcha-container">
+            <input type="checkbox" id="not-a-robot">
+            <label for="not-a-robot">I'm not a robot</label>
+        </div>
+        <a href="submit.html"><button style="width: 100%;height: 40px;background-color: #4CAF50;color: #fff; background-color: #3e8e41;padding: 10px;border: none;border-radius: 5px;cursor: pointer;">Submit</a></button>
+        </form>
+    </div>
+</body>
+</html>
