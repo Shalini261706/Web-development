@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Hall Catering</title>
+  <link rel="stylesheet" href="hall.css"/>
+</head>
+<body>
+  <header>
+    <h1>Mini Hall Catering</h1>
+    <nav>
+        <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header><br>
+
+
+  <h1 style="text-align: center;font-family: cursive; color: brown; font-size: 50px;">Hall View 1</h1>
+  <center>
+    <style>
+      img {
+        width: 600px;
+      }
+    </style>
+  <img src="hall.jpg">
+  </center><br>
+
+  <style>
+    .hall-booking {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        border: 1px solid;
+        text-align: center;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    .hall-booking h2 {
+        font-family: cursive;
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+     .hall-booking p{
+        font-family: cursive;
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+  </style>
+  <h1 style="font-family: 'Times New Roman', Times, serif;font-size: 50px;margin-bottom: 10px;text-align: center;">Book An Hall</h1>
+  <div class="hall-booking">
+    <h2>Perfect for Special Occasions,Birthday parties,Official Meetings and more</h2>
+    <p>Capacity of this hall: 200</p>
+    <p>Food Type: Both Veg and Non Veg</p>
+    <p>Price: 20,000 per day</p>
+  </div>
+
+  <section id="booking">
+    <h2 style="font-family: cursive; color: black; font-size: 50px;">Book Now</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="date" required />
+      <input type="time" required />
+      <input type="text" placeholder="Number of People" required/>
+      <div class="form-group">
+        <label for="contactMethod">Food Type</label>
+                <select id="contactMethod" name="contactMethod">
+                    <option value="phone">Veg</option>
+                    <option value="email">Non Veg</option>
+                </select>
+            </div>
+      <input type="text" placeholder=" How would you prefer to be contacted"required />
+      <input typr="text" placeholder="Is there any additional information you would like to add?"/>
+      <a href="book,html"><Button>Book</Button></a>
+    </form>
+    <p id="confirmation"></p>
+  </section><br>
+
+  <section id="contact">
+    <h2 style="font-family: cursive; color: black; font-size: 50px;">Contact Us</h2>
+    <p>Email: contact@minihall.com</p>
+    <p>Phone: +91 98765 43210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mini Hall Catering</p>
+  </footer>
+
+
